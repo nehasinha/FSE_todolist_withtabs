@@ -1,0 +1,33 @@
+<h1> Search task </h1>
+
+
+<% form_tag lists_url, :list_id => @list.id, :method => 'get' do %>
+<p>
+  <%= text_field_tag :search , params[:search] %>
+  <%#<%= text_field_tag :list_id , params[:list_id] %>
+  <%= submit_tag "Search"  , :name => nil %>
+</p>
+<% end %>
+
+
+ <% @tasks = Task.all %>
+ <% @tasks.each do |task| %>
+
+    <table border="1"  cellpadding = 10>
+
+     <tr>
+       <th>Task Name</th>
+       <th>Completion Date</th>
+     </tr>
+
+
+    <tr>
+      <td><%= "#{task.description}" %> </td>
+      <td><%= "#{task.date}" %> </td>
+    </tr>
+   </table>
+    <%#<%= link_to "Edit"         , :action => 'edit', :id => "#{task.id}" %>
+    <%#%= link_to "Delete",:id => "#{task.id}" ,:action => :destroy %>
+
+
+  <%end%>
