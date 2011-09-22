@@ -8,7 +8,7 @@
 
     <%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css", "application" %>
 
-    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application" , :defaults%>
+    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application" , ":defaults"%>
 
 
     <%= csrf_meta_tag %>
@@ -28,23 +28,38 @@
       <br/><br/>
 
 
+      <div id ="tabs" class="nav">
+        <%= link_to "Home", root_path, :class => "nav" %>  |
+        <%= link_to "To-do List", lists_path, :class => "nav" %>   |
+        <%= link_to "Albums", root_path, :class => "nav" %>
+      </div>
+
+
+
+
+
+
+
+
+
 
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <% end %>
 
       <% if show_title? %>
-          <%= tabs "Home" %>
-          <%= subtabs %>
         <h1><%= yield(:title) %></h1>
       <% end %>
 
       <%= yield %>
-
+       <%= debug(params) if Rails.env.development? %>
 
 
 
     </div>
+
+
+
 
   </body>
 </html>

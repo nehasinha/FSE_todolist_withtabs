@@ -11,7 +11,6 @@ class TasksController < ApplicationController
 
 
 
-
   def create
     @task = @list.tasks.new(params[:task])
 
@@ -44,23 +43,59 @@ class TasksController < ApplicationController
     end
   end
 
-  def list_all_tasks
-    respond_with(@tasks = Task.all)
-  end
-
-  def index
 =begin
+  def index
+    puts "inside index.....1"
     if params[:search]
-      @tasks = @list.tasks.find(:all, :conditions => ['description LIKE ?', "%#{params[:search]}%"])
-
+      @search = params[:search]
+      puts "inside index.....2"
+      puts @search
+      @task = @list.tasks
+      puts "@list.length #{@list}"
+      puts @task
+      @tasks= @task.find(:all, :conditions => ['description LIKE ?', "%#{params[:search]}%"] )
     else
-      @tasks = Task.find(:all)
+      puts "inside index.....3"
+      puts "@list: #{@list}"
+      puts "@list.tasks: #{@list.tasks}"
+      puts "params[:list_id]: #{params[:list_id]}"
+      @tasks = @list.tasks
+      puts "@tasks: #{@tasks}"
+      puts "inside index.....4"
     end
-=end
-  @task = @list.Task.search(params[:search])
-    redirect_to list_all_tasks
-
   end
+=end
+    def index
+      @tasks = Task.search(params[:search],@list)
+    end
+=begin
+def search
+    puts "inside index.....1"
+    if params[:search]
+      puts "inside index.....2"
+      @tasks = @list.tasks.find(params[:list_id])
+      puts "@List.length #{@list}"
+      @task = @tasks.find(:all, :conditions => ['description LIKE ?', "%#{search}%"])
+    else
+      puts "inside index.....3"
+      puts "@list: #{@list}"
+      puts "@list.tasks: #{@list.tasks}"
+      puts "params[:list_id]: #{params[:list_id]}"
+      #@tasks = @list.tasks.find(params[:list_id])
+      @tasks = @list.tasks
+      puts "@tasks: #{@tasks}"
+      puts "inside index.....4"
+    end
+    #redirect_to tasks_url(@task)
+    render "tasks/index"
+  end
+=end
+=begin
+   def show
+     @task = @list.tasks.find(params[:list_id])
+     redirect_to list_tasks_url(@task)
+     end
+=end
 
   private
   def find_list

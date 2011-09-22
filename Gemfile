@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'devise', :git => "git://github.com/plataformatec/devise.git"
 
 gem 'jquery-rails'
+gem 'tabs_on_rails'
 gem 'tabulous'
 
 

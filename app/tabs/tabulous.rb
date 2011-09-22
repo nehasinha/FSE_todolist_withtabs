@@ -58,7 +58,7 @@ Tabulous.setup do |config|
       #    TAB NAME      |    DISPLAY TEXT    |    PATH               |    VISIBLE?    |    ENABLED?    #
       #-------------------------------------------------------------------------------------------------#
       [    :lists_tab     ,    'To-do Lists'      ,    root_url           ,    true        ,    true        ],
-      [    :lists_subtab  , "#{@list.description}", list_tasks_path       ,    true        ,    true        ],
+      [    :lists_subtab  , "Hello"               , list_tasks_path       ,    true        ,    true        ],
       #[    :tasks_tab    ,    'Tasks'            ,    tasks_path         ,    true        ,    true        ],
       #[    :lists_tab    ,    'Lists'            ,    root_path          ,    true        ,    true        ],
       #[    :lists_tab    ,    'Lists'            ,    index_path         ,    true        ,    true        ],

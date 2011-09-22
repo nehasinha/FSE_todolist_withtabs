@@ -123,14 +123,144 @@ a {
 
  #create_task {
   width: 35%;
-
   border: 3px solid #ccc;
   background-color: #FFF;
-  position: relative;
-  top: -400px;
-  right: -600px;
+  position: fixed;
+  top: 100px;
+  right: 125px;
+ /* top: -400px;
+  right: -600px;  */
 }
 
 #search_and_list_links {
 
 }
+
+
+#tablist{
+padding: 3px 0;
+margin-left: 0;
+margin-bottom: 0;
+margin-top: 0.1em;
+font: bold 12px Verdana;
+border-bottom: 1px solid gray;
+}
+#tablist li{
+list-style: none;
+display: inline;
+margin: 0;
+}
+
+#tablist li a{
+text-decoration: none;
+padding: 3px 0.5em;
+margin-right: 3px;
+border: 1px solid #778;
+border-bottom: none;
+background: white;
+}
+
+#tablist li a:link, #tablist li a:visited{
+color: navy;
+}
+
+#tablist li a:hover{
+color: black;
+background: lightyellow;
+border-color: navy;
+}
+
+#tablist li a.current{
+background: lightyellow;
+}
+
+
+
+/*********/
+/*-------------------------------------------------
+ The background color of all tabs
+ -------------------------------------------------*/
+#header .tabs li { background: #272727; }
+/*-------------------------------------------------
+ The text color of all tabs
+ -------------------------------------------------*/
+#header .tabs a { color: #fff; }
+/*-------------------------------------------------
+ The hover color of all tabs
+ -------------------------------------------------*/
+#header .tabs a:hover
+background: #fff;
+  color: #090;
+}
+/*-------------------------------------------------
+ The colors of a selected tab
+ -------------------------------------------------*/
+#header .tabs a.selected,
+#header .tabs a.selected:hover {
+  background: #fff;
+  color: #222;
+  font-weight: bold;
+}
+/*-------------------------------------------------
+ Tab dimensions and layout properties
+ -------------------------------------------------*/
+#header .tabs ul {
+  margin: 0 16px; padding: 0;
+  list-style-type: none;
+}
+#header .tabs li {
+  float: left;
+  margin: 0; padding: 0;
+  display: inline;
+}
+#header .tabs a {
+  float: left;
+  margin: 0; padding: 0.5em 1.8em;
+  text-decoration: none;
+}
+
+
+
+
+
+table {
+	font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 320px;
+	}
+
+th {
+	padding: 0 0.5em;
+	text-align: center;
+	}
+
+tr.yellow td {
+	border-top: 1px solid #FB7A31;
+	border-bottom: 1px solid #FB7A31;
+	background: #FFC;
+	}
+
+td {
+	border-bottom: 1px solid #CCC;
+	padding: 0 0.5em;
+	}
+
+td:first-child {
+	width: 190px;
+	}
+
+td+td {
+	border-left: 1px solid #CCC;
+	text-align: center;
+	}
+
+
+
+
+
+.nav {
+    background-color: #62759E;
+    text-decoration: none;
+}
+
+a.nav:hover { background-color: red; }

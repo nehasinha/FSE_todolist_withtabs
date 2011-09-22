@@ -1,0 +1,34 @@
+<h1> Showing tasks</h1>
+
+<%#<%= form_tag list_tasks_url(@task), :controller => 'tasks', :action=>'index', :list_id => @list.id do %>
+<%= form_tag list_task_url(@list), :list_id => @list.id do %>
+
+<p>
+  <%= text_field_tag :search , params[:search] %>
+  <%= submit_tag "Search"  , :name => nil %>
+</p>
+<% end %>
+
+
+<table border="1"  cellpadding = 10>
+
+   <tr class="header">
+       <th>Task Name</th>
+       <th>Completion Date</th>
+   </tr>
+
+ <%#   <% @tasks = Task.find(list.id = :list_id) %>
+    <%#<% @tasks = @list.tasks.find(:all, :conditions => ['list_id = ', "%#{params[:list_id]}%"]) %>
+
+
+
+
+
+      <% @tasks.each do |task| %>
+      <tr>
+      <td><%= "#{task.description}" %></td>
+      <td><%= "#{task.date}" %></td>
+    </tr>
+
+   <% end %>
+</table>

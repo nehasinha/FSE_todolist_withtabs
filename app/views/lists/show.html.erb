@@ -25,10 +25,25 @@
 
 <div id = "create_task" >
 <ul>
-<%= form_for [@list, @task] do |form|   %>
+<%= form_for [@list,@task], :list_id => @list.id do |form|   %>
+ <li>
    <%= form.label "Task description" %><%= form.text_field :description %><br/>
+ </li>
    <%= form.label "Complete By   " %>  <%=form.text_field :date %>
-   <%= button_to "Create new task", new_task_path(@list.id) %>
+   <%#<%= button_to "Create new task", new_task_path(@list.id) %>
+   <%= button_to "Create new task", new_list_task_path(@list.id) %>
+   <%= link_to "Back to all lists", lists_url %>
+
+<%= link_to "Search", :controller => 'tasks', :action=>'index', :list_id => @list.id%>
+
+
+
+
+<%#    <%= link_to "Search", tasks_path(:list_id => @list.id) %>
+
+
+
+ <%#  <% @counter = 1 %>
   <%#<%= link_to "New Task", :action => 'new', :list_id => @list.id  ,:controller => 'tasks' %>
 
 <% end %>
@@ -39,7 +54,8 @@
 
 
 <%= link_to "Back to all lists", lists_url %>
+<%= link_to "Search", :controller => 'tasks', :action=>'index', :list_id => @list.id%>
+<%#<%= link_to "Search", task_path(@list.id) %>
 
-<%= link_to "Search", :controller => 'tasks', :action=>'list_all_tasks', :list_id => @list.id%>
 
 

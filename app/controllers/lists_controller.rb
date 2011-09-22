@@ -21,6 +21,11 @@ class ListsController < ApplicationController
     end
   end
 
+  def home
+    render 'home'
+  end
+
+
   def show
     @list = List.find(params[:id])
     @task = @list.tasks.new

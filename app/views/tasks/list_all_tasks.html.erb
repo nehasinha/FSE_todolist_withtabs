@@ -1,33 +1,56 @@
 <h1> Search task </h1>
 
 
-<% form_tag lists_url, :list_id => @list.id, :method => 'get' do %>
+<% form_tag :action=>'list_all_tasks', :list_id => @list.id, :counter => @counter, :method => 'get' do %>
 <p>
   <%= text_field_tag :search , params[:search] %>
-  <%#<%= text_field_tag :list_id , params[:list_id] %>
   <%= submit_tag "Search"  , :name => nil %>
 </p>
 <% end %>
 
 
- <% @tasks = Task.all %>
- <% @tasks.each do |task| %>
+<table border="1"  cellpadding = 10>
 
-    <table border="1"  cellpadding = 10>
-
-     <tr>
+   <tr class="header">
        <th>Task Name</th>
        <th>Completion Date</th>
-     </tr>
+   </tr>
+
+ <%#   <% @tasks = Task.find(list.id = :list_id) %>
+    <%#<% @tasks = @list.tasks.find(:all, :conditions => ['list_id = ', "%#{params[:list_id]}%"]) %>
 
 
-    <tr>
-      <td><%= "#{task.description}" %> </td>
-      <td><%= "#{task.date}" %> </td>
+
+
+  <% @task.each do |task| %>
+      <tr>
+      <td><%= "#{task.description}" %></td>
+      <td><%= "#{task.date}" %></td>
     </tr>
-   </table>
+
+   <% end %>
+
+
+
+
+
+
+
+ <%# <% @task = @list.tasks.find(:all, params[:list_id]) %>
+  <%#<% if params[:counter].to_i > 1 %>
+  <%#    <% @task = @task.find(:all, :conditions => ['description LIKE ?', params[:search]])  %>
+  <%#<% end %>
+  <%#<% @task.each do |task| %>
+  <%#    <tr>
+      <td><%= "#{task.description}" %>
+  <%#</td>
+      <td><%= "#{task.date}" %>
+  <%#</td>
+    </tr>
+    <% params[:counter] = 2 %>
     <%#<%= link_to "Edit"         , :action => 'edit', :id => "#{task.id}" %>
     <%#%= link_to "Delete",:id => "#{task.id}" ,:action => :destroy %>
 
 
-  <%end%>
+ <%# <%end%>
+</table>

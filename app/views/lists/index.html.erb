@@ -1,9 +1,8 @@
-<%= tabs  %>
-<%#<h1>My to do lists</h1>   %>
+
+<h1>My to do lists</h1>
 
     <% @lists.each do |list| %>
-    <%= subtabs %>
-    <%= link_to "#{list.name}" , :action => 'show', :id => "#{list.id}" %>
+    <%= link_to "#{list.name}" , :controller => 'lists', :action => 'show', :id => "#{list.id}" %>
     <p><%= list.description %>
     <%= link_to "Edit"         , :action => 'edit', :id => "#{list.id}" %> |
     <%= link_to "Delete",:id => "#{list.id}" ,:action => :destroy %>
@@ -14,5 +13,16 @@
 
 
 <%= link_to "Add new list","new" %>
+
+<hr/>
+
+<ul id="tablist">
+<li><a class="current" href="http://www.cssdrive.com">CSS Drive</a></li>
+<li><a href="http://www.yahoo.com">Yahoo</a></li>
+<li><a href="http://www.google.com">Google</a></li>
+<li><a href="http://www.news.com">News.com</a></li>
+</ul>
+
+
 
 
