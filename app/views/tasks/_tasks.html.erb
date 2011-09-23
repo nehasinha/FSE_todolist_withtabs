@@ -1,0 +1,28 @@
+
+<table border="1"  cellpadding = 10>
+
+   <tr class="header">
+       <th><%= link_to "Task Name", :sort => "description" %></th>
+
+       <th><%= link_to "Completion Date", :sort=> "date"%></th>
+    <%#   <th><%= link_to "Status", :sort => "completed" %>
+   </tr>
+
+ <%#   <% @tasks = Task.find(list.id = :list_id) %>
+    <%#<% @tasks = @list.tasks.find(:all, :conditions => ['list_id = ', "%#{params[:list_id]}%"]) %>
+
+
+
+
+
+      <% @tasks.each do |task| %>
+      <tr>
+      <td><%= "#{task.description}" %></td>
+      <td><%= "#{task.date}" %></td>
+      <%#<td><%= "#{task.completed ? "Done" : "Not yet done"}" %>
+    </tr>
+
+   <% end %>
+</table>
+<%= will_paginate @tasks %>
+

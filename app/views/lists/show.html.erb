@@ -3,24 +3,43 @@
 
 
 <h3>Stuff to do</h3>
-<ul>
+
+
+<table border="1"  cellpadding = 10>
+
+
+ <%# <ul> %>
   <% @list.tasks.incomplete.each do |task| %>
-  <li>
-    <%= task.description %>
-    <%= button_to "Complete", complete_task_path(@list.id, task.id), :class => 'complete_button' %>
-    <%= button_to "Delete", destroy_task_path(@list.id, task.id), :class => 'delete_button' %>
-  </li>
-  <% end %>
-</ul>
+<%#  <li>  %>
+    <tr>
+    <td><%= task.description %></td>
+    <td><%= button_to "Complete", complete_task_path(@list.id, task.id), :class => 'complete_button' %> </td>
+    <td><%= button_to "Delete", destroy_task_path(@list.id, task.id), :class => 'delete_button' %> </td>
+
+    </tr>
+    <% end %>
+ <%# </li> %>
+
+  <%#</ul> %>
+
+</table>
+
+
 <h3>Stuff ive done</h3>
-<ul id="completed">
+<table border class="1 cellpadding = 10" >
+<%#<ul id="completed"> %>
   <% @list.tasks.completed.each do |task| %>
-  <li>
-    <%= task.description %>
-    <%= button_to "Delete", destroy_task_path(@list.id, task.id), :class => 'delete_button_completed' %>
-  </li>
+  <%# <li> %>
+  <tr>
+    <td><%= task.description %></td>
+    <td><%= button_to "Delete", destroy_task_path(@list.id, task.id), :class => 'delete_button' %></td>
+  <%#</li> %>
+  </tr>
   <% end %>
-</ul>
+<%#</ul> %>
+
+
+</table>
 
 
 <div id = "create_task" >

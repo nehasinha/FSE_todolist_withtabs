@@ -3,34 +3,14 @@
 
 <%#<%= form_tag :controller => 'tasks', :action=>'index', :list_id => @list.id  do %>
 <%#<%= form_tag tasks_url(:list_id => @list.id), :list_id => @list.id, :method => 'get' do %>
-<%= form_tag list_tasks_path(:list_id => @list.id),  :method => 'get' do %>
+<%= form_tag list_tasks_path(:list_id => @list.id),  :method => 'get' , :id => "tasks_search" do %>
 
 <p>
   <%= text_field_tag :search , params[:search] %>
   <%= submit_tag "Search"  , :name => nil %>
 </p>
+
+
+
+<div id ="tasks"> <%= render 'tasks' %></div>
 <% end %>
-
-
-<table border="1"  cellpadding = 10>
-
-   <tr class="header">
-       <th>Task Name</th>
-       <th>Completion Date</th>
-   </tr>
-
- <%#   <% @tasks = Task.find(list.id = :list_id) %>
-    <%#<% @tasks = @list.tasks.find(:all, :conditions => ['list_id = ', "%#{params[:list_id]}%"]) %>
-
-
-
-
-
-      <% @tasks.each do |task| %>
-      <tr>
-      <td><%= "#{task.description}" %></td>
-      <td><%= "#{task.date}" %></td>
-    </tr>
-
-   <% end %>
-</table>

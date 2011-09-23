@@ -6,13 +6,15 @@ class Task < ActiveRecord::Base
   scope :incomplete, where(:completed => false)
 
 
-def self.search(search, list)
+def self.search(search,list)
     if search
-      puts "inside index.....2"
-      @task = list.tasks
-      puts "@list.length #{list}"
-      puts @task
-      @task.find(:all, :conditions => ['description LIKE ?', "%#{search}%"] )
+     ## puts "inside index.....2"
+     ## @task = list.tasks
+     ## puts "@list.length #{list}"
+     ## puts @task
+      where("list_id = '#{list.id}' AND description LIKE?", "%#{search}%" )
+      ##@task.find(:all, :conditions => ['description LIKE ?', "%#{search}%"] )
+
     else
       puts "inside index.....3"
       puts "@list: #{list}"
@@ -20,8 +22,13 @@ def self.search(search, list)
     #  puts "params[:list_id]: #{params[:list_id]}"
  #     puts "@tasks: #{@tasks}"
       puts "inside index.....4"
-     list.tasks
 
+
+
+
+     ## list.tasks
+    ## scoped
+      where("list_id = '#{list.id}'" )
     end
   end
 

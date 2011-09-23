@@ -66,7 +66,11 @@ class TasksController < ApplicationController
   end
 =end
     def index
-      @tasks = Task.search(params[:search],@list)
+     # @tasks = Task.search(params[:search],@list).paginate(:per_page => 4, :page => params[:page])
+    #  @tasks = Task.order(params[:sort])
+    #  @tasks = Task.order(params[:sort])
+      @tasks = Task.search(params[:search],@list).paginate(:per_page => 4, :page => params[:page])
+      #order(params[:sort])
     end
 =begin
 def search

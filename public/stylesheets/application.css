@@ -96,16 +96,16 @@ a {
 .complete_button {
     display: inline;
     position: relative;
-    top:-20px;
-    left:250px;
+    top:0px;
+    left:0px;
     width: 70px;
     background: #f5deb3
 }
 .delete_button {
     display: inline;
     position: relative;
-    top:-45px;
-    left: 350px;
+    top:0px;
+    left: 0px;
     width: 70px;
     background: #f5deb3
 
@@ -226,22 +226,27 @@ background: #fff;
 table {
 	font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
-	width: 320px;
+	width: 50%;
+
+
+    border: 1px solid black;
 	}
 
 th {
 	padding: 0 0.5em;
 	text-align: center;
-	}
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
 
 tr.yellow td {
-	border-top: 1px solid #FB7A31;
+	border-top: 5px solid #FB7A31;
 	border-bottom: 1px solid #FB7A31;
 	background: #FFC;
 	}
 
 td {
-	border-bottom: 1px solid #CCC;
+	border-bottom: 1px solid black;
 	padding: 0 0.5em;
 	}
 
@@ -250,7 +255,7 @@ td:first-child {
 	}
 
 td+td {
-	border-left: 1px solid #CCC;
+	border-left: 1px solid black;
 	text-align: center;
 	}
 
@@ -264,3 +269,4 @@ td+td {
 }
 
 a.nav:hover { background-color: red; }
+

@@ -12,6 +12,8 @@ gem 'jquery-rails'
 gem 'tabs_on_rails'
 gem 'tabulous'
 
+gem 'will_paginate','3.0.0'
+
 
 # Use unicorn as the web server
 # gem 'unicorn'
