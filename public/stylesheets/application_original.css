@@ -1,0 +1,272 @@
+body {
+  background-color: #778899;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+  background: url('/images/sunset.jpg') no-repeat center center fixed;
+  background-attachment: scroll;
+}
+/*
+a img {
+  border: none;
+}
+
+a {
+  color: #0000FF;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+    */
+#container {
+
+  width: 75%;
+  height:  0%;
+  margin: 0 auto;
+  background-color: graytext;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+
+#flash_notice, #flash_error {
+  padding: 5px 8px;
+  margin: 10px 0;
+  width: 400px;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+#flash_error {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 8px;
+}
+
+#errorExplanation ul {
+  margin: 2px 24px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: disc;
+}
+
+#user_nav {
+  float: right;
+
+  font-size: 12px;
+}
+
+
+
+.complete_button {
+    display: inline;
+    position: relative;
+    top:0px;
+    left:0px;
+    width: 70px;
+    background: #f5deb3
+}
+.delete_button {
+    display: inline;
+    position: relative;
+    top:0px;
+    left: 0px;
+    width: 70px;
+    background: #f5deb3
+
+
+}
+
+.delete_button_completed {
+    display: inline;
+    position: relative;
+    top:-25px;
+    left: 250px;
+    width: 70px;
+    background: #f5deb3
+}
+
+ #create_task {
+  width: 35%;
+  border: 3px solid #ccc;
+  background-color: #FFF;
+  position: fixed;
+  top: 100px;
+  right: 125px;
+ /* top: -400px;
+  right: -600px;  */
+}
+
+#search_and_list_links {
+
+}
+
+
+#tablist{
+padding: 3px 0;
+margin-left: 0;
+margin-bottom: 0;
+margin-top: 0.1em;
+font: bold 12px Verdana;
+border-bottom: 1px solid gray;
+}
+#tablist li{
+list-style: none;
+display: inline;
+margin: 0;
+}
+
+#tablist li a{
+text-decoration: none;
+padding: 3px 0.5em;
+margin-right: 3px;
+border: 1px solid #778;
+border-bottom: none;
+background: white;
+}
+
+#tablist li a:link, #tablist li a:visited{
+color: navy;
+}
+
+#tablist li a:hover{
+color: black;
+background: lightyellow;
+border-color: navy;
+}
+
+#tablist li a.current{
+background: lightyellow;
+}
+
+
+
+/*********/
+/*-------------------------------------------------
+ The background color of all tabs
+ -------------------------------------------------*/
+#header .tabs li { background: #272727; }
+/*-------------------------------------------------
+ The text color of all tabs
+ -------------------------------------------------*/
+#header .tabs a { color: #fff; }
+/*-------------------------------------------------
+ The hover color of all tabs
+ -------------------------------------------------*/
+#header .tabs a:hover
+background: #fff;
+  color: #090;
+}
+/*-------------------------------------------------
+ The colors of a selected tab
+ -------------------------------------------------*/
+#header .tabs a.selected,
+#header .tabs a.selected:hover {
+  background: #fff;
+  color: #222;
+  font-weight: bold;
+}
+/*-------------------------------------------------
+ Tab dimensions and layout properties
+ -------------------------------------------------*/
+#header .tabs ul {
+  margin: 0 16px; padding: 0;
+  list-style-type: none;
+}
+#header .tabs li {
+  float: left;
+  margin: 0; padding: 0;
+  display: inline;
+}
+#header .tabs a {
+  float: left;
+  margin: 0; padding: 0.5em 1.8em;
+  text-decoration: none;
+}
+
+
+
+
+
+table {
+	font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 50%;
+
+
+    border: 1px solid black;
+	}
+
+th {
+	padding: 0 0.5em;
+	text-align: center;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+tr.yellow td {
+	border-top: 5px solid #FB7A31;
+	border-bottom: 1px solid #FB7A31;
+	background: #FFC;
+	}
+
+td {
+	border-bottom: 1px solid black;
+	padding: 0 0.5em;
+	}
+
+td:first-child {
+	width: 190px;
+	}
+
+td+td {
+	border-left: 1px solid black;
+	text-align: center;
+	}
+
+
+
+
+
+.nav {
+    background-color: #62759E;
+    text-decoration: none;
+}
+
+a.nav:hover { background-color: red; }
+
