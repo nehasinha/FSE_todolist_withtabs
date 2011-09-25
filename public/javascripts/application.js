@@ -16,8 +16,10 @@ $(function(){
        $.get($("#tasks_search").attr("action"), $("#tasks_search").serialize(),null, "script");
        return false;
     });
-
-
+    $("#tasks_search input").click(function(){
+       $.get($("#tasks_search").attr("action"), $("#tasks_search").serialize(),null, "script");
+       return false;
+    });
 });
 
 

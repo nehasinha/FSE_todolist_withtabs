@@ -1,8 +1,42 @@
-<h2><%= @list.name %></h2>
+<html>
+<body>
+<h4><%= @list.name %></h4>
 <%= @list.description %>
 
-
+<link href="application.css" rel="stylesheet" type="text/css" media="screen" />
 <h3>Stuff to do</h3>
+
+
+
+<div id = "right-sidebar" >
+                        <ul>
+                            <%= form_for [@list,@task], :list_id => @list.id do |form|   %>
+                            <li>
+                                 <h2>
+                                   <%= form.label "Task description" %>
+                                   <%= form.text_field :description, :size => 10%>
+                                 </h2>
+
+                                 <h2>
+                                   <%= form.label "Complete By"%>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                   <%=form.text_field :date, :size => 10 %>
+                                 </h2>
+
+   <%#<%= button_to "Create new task", new_task_path(@list.id) %>
+
+                                 <h2><%= button_to "Create new task", new_list_task_path(@list.id) %></h2>
+
+
+                                 <h2><%= link_to "Back to all lists", lists_url %></h2>
+
+                                 <h2><%= link_to "Search", :controller => 'tasks', :action=>'index', :list_id => @list.id%> </h2>
+
+                            </li>
+                            <% end %>
+                        </ul>
+</div>
+                    <div style="clear: both;">&nbsp;</div>
+
 
 
 <table border="1"  cellpadding = 10>
@@ -12,12 +46,11 @@
   <% @list.tasks.incomplete.each do |task| %>
 <%#  <li>  %>
     <tr>
-    <td><%= task.description %></td>
-    <td><%= button_to "Complete", complete_task_path(@list.id, task.id), :class => 'complete_button' %> </td>
-    <td><%= button_to "Delete", destroy_task_path(@list.id, task.id), :class => 'delete_button' %> </td>
-
+        <td><%= task.description %></td>
+        <td><%= button_to "Complete", complete_task_path(@list.id, task.id), :class => 'complete_button' %> </td>
+        <td><%= button_to "Delete", destroy_task_path(@list.id, task.id), :class => 'delete_button' %> </td>
     </tr>
-    <% end %>
+  <% end %>
  <%# </li> %>
 
   <%#</ul> %>
@@ -26,15 +59,15 @@
 
 
 <h3>Stuff ive done</h3>
-<table border class="1 cellpadding = 10" >
+<table border class="1" cellpadding = 10 >
 <%#<ul id="completed"> %>
   <% @list.tasks.completed.each do |task| %>
   <%# <li> %>
-  <tr>
-    <td><%= task.description %></td>
-    <td><%= button_to "Delete", destroy_task_path(@list.id, task.id), :class => 'delete_button' %></td>
+    <tr>
+         <td><%= task.description %></td>
+         <td><%= button_to "Delete", destroy_task_path(@list.id, task.id), :class => 'delete_button' %></td>
   <%#</li> %>
-  </tr>
+    </tr>
   <% end %>
 <%#</ul> %>
 
@@ -42,18 +75,11 @@
 </table>
 
 
-<div id = "create_task" >
-<ul>
-<%= form_for [@list,@task], :list_id => @list.id do |form|   %>
- <li>
-   <%= form.label "Task description" %><%= form.text_field :description %><br/>
- </li>
-   <%= form.label "Complete By   " %>  <%=form.text_field :date %>
-   <%#<%= button_to "Create new task", new_task_path(@list.id) %>
-   <%= button_to "Create new task", new_list_task_path(@list.id) %>
-   <%= link_to "Back to all lists", lists_url %>
 
-<%= link_to "Search", :controller => 'tasks', :action=>'index', :list_id => @list.id%>
+
+
+
+
 
 
 
@@ -65,9 +91,8 @@
  <%#  <% @counter = 1 %>
   <%#<%= link_to "New Task", :action => 'new', :list_id => @list.id  ,:controller => 'tasks' %>
 
-<% end %>
-</ul>
-</div>
+
+
 <hr/>
 
 
@@ -76,5 +101,5 @@
 <%= link_to "Search", :controller => 'tasks', :action=>'index', :list_id => @list.id%>
 <%#<%= link_to "Search", task_path(@list.id) %>
 
-
-
+ </body>
+</html>
