@@ -9,6 +9,13 @@
 
 
 <div id = "right-sidebar" >
+  <h2><%= link_to "Search", :controller => 'tasks', :action=>'index', :list_id => @list.id%> </h2>
+  <h2><%= link_to "Back to all lists", lists_url %></h2>
+
+  <br/><br/><br/><br/>
+  <br/><br/><br/><br/>
+  <br/><br/><br/><br/>
+
                         <ul>
                             <%= form_for [@list,@task], :list_id => @list.id do |form|   %>
                             <li>
@@ -27,9 +34,6 @@
                                  <h2><%= button_to "Create new task", new_list_task_path(@list.id) %></h2>
 
 
-                                 <h2><%= link_to "Back to all lists", lists_url %></h2>
-
-                                 <h2><%= link_to "Search", :controller => 'tasks', :action=>'index', :list_id => @list.id%> </h2>
 
                             </li>
                             <% end %>
@@ -93,12 +97,12 @@
 
 
 
-<hr/>
 
 
 
-<%= link_to "Back to all lists", lists_url %>
-<%= link_to "Search", :controller => 'tasks', :action=>'index', :list_id => @list.id%>
+
+<%#= link_to "Back to all lists", lists_url %>
+<%#= link_to "Search", :controller => 'tasks', :action=>'index', :list_id => @list.id%>
 <%#<%= link_to "Search", task_path(@list.id) %>
 
  </body>

@@ -1,25 +1,18 @@
 
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
    <head>
-    <title><%= yield(:title) || "Untitled" %></title>
-
+    <title>HomeSpace</title>
     <%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css", "application" %>
 
     <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application" , ":defaults"%>
-
-
-
-
 
 
     <%= csrf_meta_tag %>
     <%= yield(:head) %>
   </head>
   <body>
-
 
     <div id="wrapper">
 
@@ -35,7 +28,7 @@
               </div>
 			  <div id="logo">
 				    <h1>HomeSpace</h1>
-				    <p>template design by <a href="http://www.freecsstemplates.org/">CSS Templates</a></p>
+				    <p>connecting family...</p>
 			  </div>
 		    </div>
 	    </div>
@@ -55,8 +48,6 @@
 				    <div id="content">
                        <div class="post">
 
-
-
                             <% flash.each do |name, msg| %>
                             <%= content_tag :div, msg, :id => "flash_#{name}" %>
                             <% end %>
@@ -66,7 +57,7 @@
                             <% end %>
 
                             <%= yield %>
-                            <%= debug(params) if Rails.env.development? %>
+                            <%#= debug(params) if Rails.env.development? %>
 
                         </div>
                        <div style="clear: both;">&nbsp;</div>
@@ -100,23 +91,24 @@
 </html>
 
 
-
+<!--
 <div id ="tabs" class="nav">
-        <%= link_to "Home", root_path, :class => "nav" %>  |
-        <%= link_to "To-do List", lists_path, :class => "nav" %>   |
-        <%= link_to "Albums", root_path, :class => "nav" %>
+        <%#= link_to "Home", root_path, :class => "nav" %>  |
+        <%#= link_to "To-do List", lists_path, :class => "nav" %>   |
+        <%#= link_to "Albums", root_path, :class => "nav" %>
       </div>
 
 
 <div id="container">
       <div id="user_nav">
-        <% if user_signed_in? %>
-          Signed in as <%= current_user.email %>. Not you?
-          <%= link_to "Sign out", destroy_user_session_path, :method => :delete  %>
-        <% else %>
-          <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
-        <% end %>
+        <#% if user_signed_in? %>
+          Signed in as <%#= current_user.email %>. Not you?
+          <%#= link_to "Sign out", destroy_user_session_path, :method => :delete  %>
+        <%# else %>
+          <%#= link_to "Sign up", new_user_registration_path %> or <%#= link_to "sign in", new_user_session_path %>
+        <%# end %>
       </div>
       <br/>
       <br/><br/>
      </div>
+-->

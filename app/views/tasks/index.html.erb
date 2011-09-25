@@ -1,3 +1,4 @@
+
 <h1> Search task </h1>
 
 
@@ -6,7 +7,7 @@
 <%= form_tag list_tasks_path(:list_id => @list.id),  :method => 'get' , :id => "tasks_search" do %>
 
 <p>
-  <%= text_field_tag :search , params[:search] %>
+  <div id="text_field"><%= text_field_tag :search ,params[:search], :size => 2%> </div>
   <%= submit_tag "Search"  , :name => nil %>
 </p>
 

@@ -9,14 +9,15 @@
        <div id = 'center_bar' align="center"><%= link_to "Edit", :action => 'edit', :id => "#{list.id}" %> |
        <%= link_to "Delete",:id => "#{list.id}" ,:action => :destroy %><br/><br /></div>
     <%end%>
-<hr/>
+
 
 <div id="right-sidebar">
   <ul>
     <li>
       <h2><%= link_to "Add new list","new" %>
+
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
       </h2>
     </li>
   </ul>

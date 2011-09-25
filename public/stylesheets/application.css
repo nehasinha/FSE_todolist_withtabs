@@ -1,15 +1,9 @@
 
-/*
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
-*/
 
 body {
 	margin: 0;
 	padding: 0;
-	/*background: #1B120B url(images/img02.jpg) repeat-x left top;     */
-    background: #292E32 url(/images/img02.jpg) repeat-x left top;
+    background: #1B120B url(/images/img02.jpg) repeat-x left top;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	color: #402C16;
@@ -243,6 +237,7 @@ img.aligncenter {
 	clear: both;
 	padding-top: 20px;
 	padding-bottom: 10px;
+    height: 1000;
 }
 
 .post .title {
@@ -324,7 +319,7 @@ img.aligncenter {
 	letter-spacing: -1px;
 	font-size: 14px;
 	/*color: #CA3D2F; */
-    color: #AF24B1
+    color: #A53602;
 }
 
 #right-sidebar h3 {
@@ -432,8 +427,8 @@ img.aligncenter {
 	margin: 0;
 	padding-top: 18px;
 	line-height: normal;
-	font-size: 10px;
-	text-transform: uppercase;
+	font-size: 11px;
+
 	text-align: center;
 	color: #FFFFFF;
 }
@@ -487,7 +482,7 @@ td+td {
 
 #user_nav {
   float: right;
-  color: red;
+  color: white;
   font-size: 12px;
 }
 #center_bar{
@@ -501,13 +496,13 @@ td+td {
 }
 
 
-#flash_notice, #flash_error {
+#flash_message, #flash_error {
   padding: 5px 8px;
   margin: 10px 0;
   width: 400px;
 }
 
-#flash_notice {
+#flash_message {
   background-color: #CFC;
   border: solid 1px #6C6;
 }
@@ -553,4 +548,11 @@ td+td {
 #errorExplanation ul li {
   font-size: 12px;
   list-style: disc;
+}
+
+#text_field{
+  top:0%;
+  left: 100%;
+  margin: -10px 0px;
+  font-size: 13px;
 }
