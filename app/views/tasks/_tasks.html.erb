@@ -1,7 +1,7 @@
 
-<table border="1"  cellpadding = 10>
+<table border="1"  cellpadding = 0>
 
-   <tr class="header">
+   <tr>
        <!--<th><%#= link_to "Task Name", :sort => "description" %></th>
 
        <th><%#= link_to "Completion Date", :sort=> "date"%></th>
@@ -12,8 +12,7 @@
        <th>Completion Date</th>
 
         <div id = "right-sidebar" >
-            <h2><%= link_to "Back to all lists", lists_url %> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <h2><%= link_to "Back to all lists", lists_url %>
             </h2>
 
         </div>
@@ -40,4 +39,4 @@
 <br/><br/>
 
 <%= will_paginate @tasks %>
-
+  </div>

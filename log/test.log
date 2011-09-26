@@ -341,3 +341,198 @@ Completed   in 1ms
   [1m[35mSQL (16.0ms)[0m  SELECT COUNT(*) FROM "lists"
   [1m[36mAREL (17.3ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('Sample List for testing', 'Creating a sample list for the purpose of testing', '2011-09-24 01:52:24.720212', '2011-09-24 01:52:24.720212')[0m
   [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "lists"
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 29ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 1ms
+  [1m[35mSQL (13.8ms)[0m  SELECT COUNT(*) FROM "lists"
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('Sample List for testing', 'Creating a sample list for the purpose of testing', '2011-09-25 10:02:03.056945', '2011-09-25 10:02:03.056945')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "lists"
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 29ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 1ms
+  [1m[35mSQL (17.9ms)[0m  SELECT COUNT(*) FROM "lists"
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('Sample List for testing', 'Creating a sample list for the purpose of testing', '2011-09-25 10:20:47.823955', '2011-09-25 10:20:47.823955')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "lists"
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 22ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 1ms
+  [1m[35mSQL (12.7ms)[0m  SELECT COUNT(*) FROM "lists"
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('Sample List for testing', 'Creating a sample list for the purpose of testing', '2011-09-25 10:21:36.651798', '2011-09-25 10:21:36.651798')[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "lists"
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 41ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 1ms
+  [1m[35mSQL (45.3ms)[0m  SELECT COUNT(*) FROM "lists"
+  [1m[36mAREL (1.8ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('Sample List for testing', 'Creating a sample list for the purpose of testing', '2011-09-25 10:22:03.409685', '2011-09-25 10:22:03.409685')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "lists"
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 12ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 1ms
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "lists"
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('Sample List for testing', 'Creating a sample list for the purpose of testing', '2011-09-25 10:22:36.505132', '2011-09-25 10:22:36.505132')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "lists"
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 29ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 1ms
+  [1m[35mSQL (9.4ms)[0m  SELECT COUNT(*) FROM "lists"
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('Sample List for testing', 'Creating a sample list for the purpose of testing', '2011-09-25 10:23:18.955857', '2011-09-25 10:23:18.955857')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "lists"
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 20ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 1ms
+  [1m[35mSQL (11.1ms)[0m  SELECT COUNT(*) FROM "lists"
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('Sample List for testing', 'Creating a sample list for the purpose of testing', '2011-09-25 10:43:54.199892', '2011-09-25 10:43:54.199892')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "lists"
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 29ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 8ms
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 19ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 1ms
+  [1m[35mSQL (7.9ms)[0m  SELECT COUNT(*) FROM "lists"
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('Sample List for testing', 'Creating a sample list for the purpose of testing', '2011-09-25 10:48:33.427255', '2011-09-25 10:48:33.427255')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "lists"
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 29ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 1ms
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 29ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 1ms
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 27ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 2ms
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 29ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 1ms
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 11ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 1ms
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 10ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 1ms
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 11ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 1ms
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 12ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 1ms
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 9ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 1ms
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 11ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 1ms

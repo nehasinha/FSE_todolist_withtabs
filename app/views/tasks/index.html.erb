@@ -1,15 +1,15 @@
 
-<h1> Search task </h1>
+<h4> Search task </h4>
 
 
 <%#<%= form_tag :controller => 'tasks', :action=>'index', :list_id => @list.id  do %>
 <%#<%= form_tag tasks_url(:list_id => @list.id), :list_id => @list.id, :method => 'get' do %>
 <%= form_tag list_tasks_path(:list_id => @list.id),  :method => 'get' , :id => "tasks_search" do %>
 
-<p>
-  <div id="text_field"><%= text_field_tag :search ,params[:search], :size => 2%> </div>
-  <%= submit_tag "Search"  , :name => nil %>
-</p>
+  <div id="text_field"><%= text_field_tag :search ,params[:search]%> </div>
+   <br/><br/><br/> <br/><br/><br/><br/><br/>
+  <div id="search_button"><%= submit_tag "Search"  , :name => nil %></div> <br/><br/><br/>
+
 
 
 

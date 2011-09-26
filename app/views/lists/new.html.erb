@@ -1,4 +1,5 @@
 <h1>New to do List</h1>
+<div id =right-sidebar><%= link_to "Back to all lists", lists_url %></div>
 
 <%= form_for(@list) do |f| %>
 
@@ -12,6 +13,5 @@
     <%= f.submit %>
 
 <% end %>
-<hr/>
-<%= link_to "Back to all lists", lists_url %>
+
 

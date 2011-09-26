@@ -12,8 +12,8 @@ describe List do
 
   it "should not be valid without a name" do
      sample_list = List.new(attr)
-     sample_list.should_not be_valid
-     sample_list.errors[:name].should_not be_empty
+     subject.should_not be_valid
+     subject.errors[:name].should_not be_empty
 
   end
 end
