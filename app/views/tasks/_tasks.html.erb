@@ -1,10 +1,22 @@
 
-<table border="1"  cellpadding = 10>
+<table border="1"  cellpadding = 0>
 
-   <tr class="header">
-       <th><%= link_to "Task Name", :sort => "description" %></th>
+   <tr>
+       <!--<th><%#= link_to "Task Name", :sort => "description" %></th>
 
-       <th><%= link_to "Completion Date", :sort=> "date"%></th>
+       <th><%#= link_to "Completion Date", :sort=> "date"%></th>
+          -->
+
+       <th>Task Name</th>
+
+       <th>Completion Date</th>
+
+        <div id = "right-sidebar" >
+            <h2><%= link_to "Back to all lists", lists_url %>
+            </h2>
+
+        </div>
+
     <%#   <th><%= link_to "Status", :sort => "completed" %>
    </tr>
 
@@ -24,5 +36,7 @@
 
    <% end %>
 </table>
-<%= will_paginate @tasks %>
+<br/><br/>
 
+<%= will_paginate @tasks %>
+  </div>

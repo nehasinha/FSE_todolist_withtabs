@@ -1,105 +1,64 @@
-<html>
-<body>
+
 <h4><%= @list.name %></h4>
 <%= @list.description %>
 
+<br/><br/> <br/>
 <link href="application.css" rel="stylesheet" type="text/css" media="screen" />
-<h3>Stuff to do</h3>
 
 
 
-<div id = "right-sidebar" >
-                        <ul>
-                            <%= form_for [@list,@task], :list_id => @list.id do |form|   %>
-                            <li>
-                                 <h2>
-                                   <%= form.label "Task description" %>
-                                   <%= form.text_field :description, :size => 10%>
-                                 </h2>
+    <div id = "right-sidebar" >
+         <h2><%= link_to "Search", :controller => 'tasks', :action=>'index', :list_id => @list.id%> </h2>
+         <h2><%= link_to "Back to all lists", lists_url %></h2>
+         <br/><br/><br/>
+            <ul>
+                <%= form_for [@list,@task], :list_id => @list.id do |form|   %>
+                    <li>
+                         <h3><%= form.label "Task description" %>  </h3>
+                            &nbsp&nbsp&nbsp&nbsp<%= form.text_field :description, :size => 15%>
+                         <h3><%= form.label "Complete By"%></h3>
+                            &nbsp&nbsp&nbsp&nbsp<%=form.text_field :date, :size => 15 %>
 
-                                 <h2>
-                                   <%= form.label "Complete By"%>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                   <%=form.text_field :date, :size => 10 %>
-                                 </h2>
 
    <%#<%= button_to "Create new task", new_task_path(@list.id) %>
 
-                                 <h2><%= button_to "Create new task", new_list_task_path(@list.id) %></h2>
+
+                         <h2><%= button_to "Create new task", new_list_task_path(@list.id) %></h2>
+                    </li>
+                <% end %>
+            </ul>
+    </div>
+    <div style="clear: both;">&nbsp;</div>
 
 
-                                 <h2><%= link_to "Back to all lists", lists_url %></h2>
-
-                                 <h2><%= link_to "Search", :controller => 'tasks', :action=>'index', :list_id => @list.id%> </h2>
-
-                            </li>
-                            <% end %>
-                        </ul>
-</div>
-                    <div style="clear: both;">&nbsp;</div>
-
-
-
+<h8>Pending Tasks</h8> <br/><br/>
 <table border="1"  cellpadding = 10>
 
-
- <%# <ul> %>
   <% @list.tasks.incomplete.each do |task| %>
-<%#  <li>  %>
     <tr>
         <td><%= task.description %></td>
-        <td><%= button_to "Complete", complete_task_path(@list.id, task.id), :class => 'complete_button' %> </td>
-        <td><%= button_to "Delete", destroy_task_path(@list.id, task.id), :class => 'delete_button' %> </td>
+      <!-- <td><%#= button_to "Complete", complete_task_path(@list.id, task.id), :class => 'complete_button' %> </td>  -->
+        <td><%= link_to "Complete", complete_task_path(@list.id, task.id), :class => 'complete_button' %> </td>
+        <td><%= link_to "Delete", destroy_task_path(@list.id, task.id), :class => 'delete_button' %> </td>
     </tr>
   <% end %>
- <%# </li> %>
-
-  <%#</ul> %>
-
 </table>
 
 
-<h3>Stuff ive done</h3>
+<br/><br/><br/>
+<h8>Completed Tasks</h8> <br/><br/>
 <table border class="1" cellpadding = 10 >
-<%#<ul id="completed"> %>
+
   <% @list.tasks.completed.each do |task| %>
-  <%# <li> %>
+
     <tr>
          <td><%= task.description %></td>
-         <td><%= button_to "Delete", destroy_task_path(@list.id, task.id), :class => 'delete_button' %></td>
-  <%#</li> %>
+         <td><%= link_to "Delete", destroy_task_path(@list.id, task.id), :class => 'delete_button' %></td>
+
     </tr>
   <% end %>
-<%#</ul> %>
+
 
 
 </table>
 
-
-
-
-
-
-
-
-
-
-
-<%#    <%= link_to "Search", tasks_path(:list_id => @list.id) %>
-
-
-
- <%#  <% @counter = 1 %>
-  <%#<%= link_to "New Task", :action => 'new', :list_id => @list.id  ,:controller => 'tasks' %>
-
-
-
-<hr/>
-
-
-
-<%= link_to "Back to all lists", lists_url %>
-<%= link_to "Search", :controller => 'tasks', :action=>'index', :list_id => @list.id%>
-<%#<%= link_to "Search", task_path(@list.id) %>
-
- </body>
-</html>

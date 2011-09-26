@@ -1,4 +1,6 @@
-
+<div id = right-sidebar>
+  <h2><%= link_to "Back to all lists", lists_url %></h2>
+</div>
 <%= form_for(@list) do |f| %>
     <label>     Name
         <p><%= f.text_field :name%></p>

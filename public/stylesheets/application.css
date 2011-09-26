@@ -1,15 +1,9 @@
 
-/*
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
-*/
 
 body {
 	margin: 0;
 	padding: 0;
-	/*background: #1B120B url(images/img02.jpg) repeat-x left top;     */
-    background: #292E32 url(/images/img02.jpg) repeat-x left top;
+    background: #1B120B url(/images/img02.jpg) repeat-x left top;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	color: #402C16;
@@ -18,13 +12,13 @@ body {
 h1, h2, h3 {
 	margin: 0;
 	padding: 0;
-	font-weight: normal;
+	font-weight: 900;
 	color: #FFFFFF;
 }
 h4 {
     margin: 0;
 	padding: 0;
-	font-weight: normal ;
+	font-weight: 900 ;
     font-size: 3em;
 }
 
@@ -190,6 +184,7 @@ img.aligncenter {
 #menu li {
 	float: left;
 
+
 }
 
 #menu a {
@@ -210,7 +205,7 @@ img.aligncenter {
 }
 
 #menu a:hover {
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 /* Page */
@@ -228,7 +223,7 @@ img.aligncenter {
 
 #page-bgbtm {
 	margin: 0px;
-	padding: 40px 30px 0px 30px;
+	padding: 20px 30px 0px 30px;
 }
 
 /* Content */
@@ -243,6 +238,7 @@ img.aligncenter {
 	clear: both;
 	padding-top: 20px;
 	padding-bottom: 10px;
+    height: 1000;
 }
 
 .post .title {
@@ -301,9 +297,10 @@ img.aligncenter {
   position:absolute;
   top:50%;
   right:20%;
-  width:190;
+  width:180px;
   height:100%;
-  font-size: 8px;
+  font-size: 14px;
+  font-weight: 900 ;
 
 }
 #right-sidebar ul {
@@ -321,21 +318,30 @@ img.aligncenter {
 	height: 20px;
 	margin-bottom: 1px;
 	padding: 12px 0 0 15px;
-	letter-spacing: -1px;
+	/*letter-spacing: -1px;    */
 	font-size: 14px;
 	/*color: #CA3D2F; */
-    color: #AF24B1
+    color: #A53602;
 }
 
 #right-sidebar h3 {
 	height: 20px;
 	margin-bottom: 1px;
 	padding: 12px 0 0 15px;
-	letter-spacing: -1px;
+
 	font-size: 14px;
 	/*color: #CA3D2F; */
-    color: yellow;
+    color: #A53602;
 }
+
+
+#right-sidebar form_text_field {
+ padding: 12px 0 0 15px;
+
+
+}
+
+
 #sidebar ul {
 	margin: 0;
 	padding: 0;
@@ -432,8 +438,8 @@ img.aligncenter {
 	margin: 0;
 	padding-top: 18px;
 	line-height: normal;
-	font-size: 10px;
-	text-transform: uppercase;
+	font-size: 11px;
+
 	text-align: center;
 	color: #FFFFFF;
 }
@@ -451,27 +457,29 @@ img.aligncenter {
 table {
 	font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
-	width: 50%;
+	width: 70%;
 
 
-    border: 1px solid black;
+ /*   border: 1px solid black; */
 	}
 
 th {
-	padding: 0 0.5em;
+	padding: 0 1em;
+
 	text-align: center;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
+ /*   border-bottom: 1px solid black;
+    border-left: 1px solid black;    E54900   */
+    background-color: #CF4302;
 }
 
 tr.yellow td {
 	border-top: 5px solid #FB7A31;
-	border-bottom: 1px solid #FB7A31;
-	background: #FFC;
+/*	border-bottom: 1px solid #FB7A31;  */
+	background: #A53602;
 	}
 
 td {
-	border-bottom: 1px solid black;
+/*	border-bottom: 1px solid black;     */
 	padding: 0 0.5em;
 	}
 
@@ -487,7 +495,7 @@ td+td {
 
 #user_nav {
   float: right;
-  color: red;
+  color: white;
   font-size: 12px;
 }
 #center_bar{
@@ -501,13 +509,13 @@ td+td {
 }
 
 
-#flash_notice, #flash_error {
+#flash_message, #flash_error {
   padding: 5px 8px;
   margin: 10px 0;
   width: 400px;
 }
 
-#flash_notice {
+#flash_message {
   background-color: #CFC;
   border: solid 1px #6C6;
 }
@@ -553,4 +561,23 @@ td+td {
 #errorExplanation ul li {
   font-size: 12px;
   list-style: disc;
+}
+
+#text_field{
+  padding: 0px 310px 0 70px;
+
+}
+
+h8 {
+     font-size: 20px;
+      text-decoration: underline;
+}
+
+
+h9 {
+     color: #CF4302;
+     font-style: italic;
+     font-size: 8;
+     text-align: justify;
+     font-family: Arial, Helvetica, sans-serif;
 }

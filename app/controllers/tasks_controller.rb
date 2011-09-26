@@ -36,10 +36,11 @@ class TasksController < ApplicationController
     @task = @list.tasks.find(params[:id])
     if @task.destroy
       flash[:notice] = "Task deleted"
-      redirect_to task_url(@list)
+      redirect_to list_url(@list)
     else
       flash[:error] =" Task not deleted"
-      redirect_to task_url(@list)
+      #redirect_to task_url(@list)
+      redirect_to list_url(@list)
     end
   end
 
