@@ -11,6 +11,8 @@ gem 'devise', :git => "git://github.com/plataformatec/devise.git"
 gem 'jquery-rails'
 gem 'tabs_on_rails'
 gem 'tabulous'
+gem 'carrierwave'
+gem 'rmagick'
 
 gem 'will_paginate','3.0.0'
 
@@ -21,6 +23,10 @@ end
 group :test do
   gem 'rspec-rails', '2.6.1'
   gem 'webrat', '0.7.1'
+end
+
+group :production do
+  gem 'pg'
 end
 
 # Use unicorn as the web server

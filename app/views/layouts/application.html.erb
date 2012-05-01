@@ -6,7 +6,7 @@
     <title>HomeSpace</title>
     <%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css", "application" %>
 
-    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application" , ":defaults"%>
+    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application" , :defaults%>
 
 
     <%= csrf_meta_tag %>
@@ -38,7 +38,9 @@
 		    <ul>
 			    <li class="current page item"><%= link_to "Home", root_path %></li>
 			    <li><%= link_to "To-do List", lists_path%></li>
-			    <li><%= link_to "Albums" %></li>
+			    <li><%= link_to "Galleries" , galleries_path%></li>
+                <li><%= link_to "Places to Visit" %></li>
+                <li><%= link_to "Recipes" %></li>
 		    </ul>
 	    </div>
 
@@ -57,7 +59,7 @@
                             <% end %>
 
                             <%= yield %>
-                            <%#= debug(params) if Rails.env.development? %>
+                            <%= debug(params) if Rails.env.development? %>
 
                         </div>
                        <div style="clear: both;">&nbsp;</div>
@@ -82,7 +84,7 @@
 
     <div id="footer-wrapper">
 	    <div id="footer">
-		    <p>Copyright (c) 2011 HomeSpace.com. All rights reserved.</p>
+		    <p>Copyright (c) 2011-2012 HomeSpace.com. All rights reserved.</p>
 	    </div>
     </div>
 

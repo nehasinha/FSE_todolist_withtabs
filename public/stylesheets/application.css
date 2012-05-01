@@ -581,3 +581,30 @@ h9 {
      text-align: justify;
      font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.photo {
+  border: solid 1px #CCC;
+  padding: 10px 10px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.photo .name {
+  padding-top: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.photo .image_placeholder {
+  width: 200px;
+  height: 150px;
+  background-color: #B6B6B6;
+}
+
+.photo .actions {
+  font-size: 10px;
+  text-align: center;
+  color: #777;
+}

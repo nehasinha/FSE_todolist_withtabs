@@ -1,5 +1,9 @@
 Mytodolist::Application.routes.draw do
 
+  resources :photos
+
+  resources :galleries
+
   devise_for :users, :path_names => {:sign_up => "register"}
 
 
@@ -45,6 +49,9 @@ Mytodolist::Application.routes.draw do
       resources :tasks
   end
 
+  resources :galleries do
+    resources :photos
+  end
 
 
   # The priority is based upon order of creation:

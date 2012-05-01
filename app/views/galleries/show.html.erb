@@ -1,0 +1,35 @@
+<!--<p id="notice"><%#= notice %></p>-->
+
+<!--<p>-->
+  <!--<b>Name:</b>-->
+  <!--<%#= @gallery.name %>-->
+<!--</p>-->
+
+
+<% title @gallery.name %>
+<div id="photos">
+  <% for photo in @gallery.photos %>
+    <div class="photo">
+      <%= image_tag photo.image_url(:thumb) if photo.image? %>
+      <%#= image_tag photo.image_url(:thumb) if photo.image? %>
+      <div class="name"><%= photo.name %></div>
+      <div class="actions">
+        <%= link_to "edit", edit_photo_path(photo) %> |
+        <%= link_to "remove", photo, :confirm => 'Are you sure?', :method => :delete %>
+      </div>
+    </div>
+  <% end %>
+  <div class="clear"></div>
+</div>
+
+
+
+
+
+<%= link_to 'Edit', edit_gallery_path(@gallery) %> |
+<%= link_to 'Back', galleries_path %>
+<p>
+  <%= link_to "Add a Photo", new_photo_path(:gallery_id => @gallery) %> |
+  <%= link_to "Remove Gallery", @gallery, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View Galleries", galleries_path %>
+</p>

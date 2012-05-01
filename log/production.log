@@ -1,0 +1,87 @@
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-13 13:28:33 -0800
+  Processing by ListsController#home as HTML
+Completed   in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-13 13:28:33 -0800
+  Processing by Devise::SessionsController#new as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  
+
+Rendered /Users/neha/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/neha/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+Rendered /Users/neha/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.3ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-02-13 13:28:33 -0800
+
+ActionController::RoutingError (No route matches "/favicon.ico"):
+  
+
+Rendered /Users/neha/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-13 13:36:49 -0800
+  Processing by ListsController#home as HTML
+Completed 500 Internal Server Error in 19ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1):
+  
+
+Rendered /Users/neha/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/neha/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+Rendered /Users/neha/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-15 18:50:10 -0800
+  Processing by ListsController#home as HTML
+Completed   in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-15 18:50:10 -0800
+  Processing by Devise::SessionsController#new as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  
+
+Rendered /Users/neha/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/neha/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered /Users/neha/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-02-15 18:50:11 -0800
+
+ActionController::RoutingError (No route matches "/favicon.ico"):
+  
+
+Rendered /Users/neha/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-02-15 18:50:11 -0800
+
+ActionController::RoutingError (No route matches "/favicon.ico"):
+  
+
+Rendered /Users/neha/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-16 09:40:30 -0800
+  Processing by ListsController#home as HTML
+Completed   in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-16 09:40:31 -0800
+  Processing by Devise::SessionsController#new as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  
+
+Rendered /Users/neha/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/neha/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered /Users/neha/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.7ms)
