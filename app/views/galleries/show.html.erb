@@ -26,10 +26,26 @@
 
 
 
-<%= link_to 'Edit', edit_gallery_path(@gallery) %> |
-<%= link_to 'Back', galleries_path %>
+<%#= link_to 'Edit', edit_gallery_path(@gallery) %> |
+<%#= link_to 'Back', galleries_path %>
+
+
+<div id="right-sidebar">
+  <ul>
+    <li>
+      <h2><%#= link_to "Add new gallery",new_gallery_path %>
+
+        <!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp -->
+
+
 <p>
-  <%= link_to "Add a Photo", new_photo_path(:gallery_id => @gallery) %> |
-  <%= link_to "Remove Gallery", @gallery, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View Galleries", galleries_path %>
+  <%= link_to "Add a Photo", new_photo_path(:gallery_id => @gallery) %> </p>
+ <p> <%= link_to "Remove Gallery", @gallery, :confirm => 'Are you sure?', :method => :delete %> </p>
+ <p> <%= link_to "Back to all Galleries", galleries_path %>
 </p>
+
+      </h2>
+          </li>
+        </ul>
+      </div>

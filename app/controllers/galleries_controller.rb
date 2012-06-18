@@ -44,7 +44,7 @@ class GalleriesController < ApplicationController
 
     respond_to do |format|
       if @gallery.save
-        format.html { redirect_to(@gallery, :notice => 'Gallery was successfully created.') }
+        format.html { redirect_to(galleries_path  , :notice => 'Gallery was successfully created.') }
         format.xml  { render :xml => @gallery, :status => :created, :location => @gallery }
       else
         format.html { render :action => "new" }

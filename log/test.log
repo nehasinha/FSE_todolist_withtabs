@@ -536,3 +536,625 @@ Completed   in 11ms
 Rendered text template (0.0ms)
   Processing by ListsController#index as HTML
 Completed   in 1ms
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by ListsController#new as HTML
+Completed   in 20ms
+Rendered text template (0.0ms)
+  Processing by ListsController#index as HTML
+Completed   in 0ms
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (10.5ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1
+  [1m[36mAREL (1.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$pyl431gjCVJF7eFYPzVMreKUb2.HG7NKkEKr/2cMbDtFpIQRIMDkO', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:02:11.944735', '2012-05-01 08:02:11.944735')[0m
+  Processing by ListsController#new as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered lists/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 61ms (Views: 57.4ms | ActiveRecord: 13.0ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$8hzqjEdnJ3YV1kW7hvwbleX5i4uletdGc8ZrUYx0qLt9k0nHYZs32', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:02:12.092420', '2012-05-01 08:02:12.092420')
+  Processing by ListsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mList Load (0.4ms)[0m  SELECT "lists".* FROM "lists"
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 1.4ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (16.0ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1
+  [1m[36mAREL (0.9ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$ZXD.jjbhm7V1VxMQQVb5xeZQXTCsxF9JeOiiCUY1guuRwgcQOnwqK', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:04:55.961411', '2012-05-01 08:04:55.961411')[0m
+  Processing by ListsController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mList Load (0.4ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+Rendered lists/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 54ms (Views: 50.9ms | ActiveRecord: 18.5ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$u5fgvicAw28aUEzmsXVYSOls2CQXBmc3JL5pNGA8lEQupAX0B39L6', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:04:56.061804', '2012-05-01 08:04:56.061804')[0m
+  Processing by ListsController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 1.3ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$Nb3YdhQVV9atcmMO5t5xWu6vmoxDT1FRLxmqDCc.5my7hyqBHFx/W', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:04:56.106501', '2012-05-01 08:04:56.106501')
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$9om5i/xpdxZ8nNtDVXUlyeC7YdPfjTvn36rKlxODsyz5kyX6pfo86', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:04:56.122062', '2012-05-01 08:04:56.122062')
+  Processing by ListsController#create as HTML
+  Parameters: {"project"=>nil}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Redirected to http://test.host/new
+Completed 302 Found in 225ms
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$MpNqLEhwAF89wbAhPSBPjOlXF9TjpFCBkanHn0ldqcKc0ahqfrJlq', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:04:56.363696', '2012-05-01 08:04:56.363696')[0m
+  Processing by ListsController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 3.1ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$MwKx164kyxAWHTo0F0BLEuyxPKbuwSY9yV1y1IwlvDb4/BnhnE5CS', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:04:56.384454', '2012-05-01 08:04:56.384454')
+  Processing by ListsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mList Load (0.1ms)[0m  SELECT "lists".* FROM "lists"
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 1.4ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (137.2ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1
+  [1m[36mAREL (75.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$btiwpwf.weJY9pNoSgBA2OlVJN6Dkhq9UBRFo6RnaKUsyd62hWRxq', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:11:23.286968', '2012-05-01 08:11:23.286968')[0m
+  Processing by ListsController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mList Load (15.6ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+Rendered lists/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 74ms (Views: 55.7ms | ActiveRecord: 229.6ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$QB0kM4k7sVVgzA7CEvo4H.cSAS1momfxiDQpZe/shsPm.UFp.6VsC', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:11:23.575944', '2012-05-01 08:11:23.575944')[0m
+  Processing by ListsController#new as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 38ms (Views: 33.7ms | ActiveRecord: 1.8ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$5kRR5lwcDVKOBJdVDA/4IeUNM5fvt5owM5dqF6RKNox/sS9EZrJ8y', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:11:23.632690', '2012-05-01 08:11:23.632690')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('home', 'To do list for home', '2012-05-01 08:11:23.637664', '2012-05-01 08:11:23.637664')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "lists"
+  Processing by ListsController#create as HTML
+  Parameters: {"list"=>{"name"=>"home", "description"=>"To do list for home"}}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('home', 'To do list for home', '2012-05-01 08:11:23.649816', '2012-05-01 08:11:23.649816')
+Redirected to http://test.host/lists/index
+Completed 302 Found in 4ms
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "lists"[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$29jNn4RkLd0FBItAkeTssOVIhaBNEOKSamN6RSSo6u3nCqZvjSY8y', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:11:23.663623', '2012-05-01 08:11:23.663623')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('home', 'To do list for home', '2012-05-01 08:11:23.666187', '2012-05-01 08:11:23.666187')
+  Processing by ListsController#create as HTML
+  Parameters: {"list"=>{"name"=>"home", "description"=>"To do list for home"}}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('home', 'To do list for home', '2012-05-01 08:11:23.672451', '2012-05-01 08:11:23.672451')
+Redirected to http://test.host/lists/index
+Completed 302 Found in 3ms
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (10.5ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1
+  [1m[36mAREL (1.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$xy2rz0KsxhCcqgwGZepmoehwpWPZLpRIobTUWdaNyk6oZnaReDuH.', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:12:55.909087', '2012-05-01 08:12:55.909087')[0m
+  Processing by ListsController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mList Load (0.4ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+Rendered lists/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 52ms (Views: 49.2ms | ActiveRecord: 13.6ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$HYnzFp22sMKnjVUD0euF2.xsqxizYHaJ6hYlBFkPUW5KMS1vrfRAS', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:12:56.053149', '2012-05-01 08:12:56.053149')[0m
+  Processing by ListsController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 1.1ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$64AYg1qlGeMZK3SF1HNMYeOq4kNA7m9NfrOtZolAmqqQ/g0kY.oPW', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:12:56.110224', '2012-05-01 08:12:56.110224')
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('home', 'To do list for home', '2012-05-01 08:12:56.115308', '2012-05-01 08:12:56.115308')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "lists"
+  Processing by ListsController#create as HTML
+  Parameters: {"list"=>{"name"=>"home", "description"=>"To do list for home"}}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('home', 'To do list for home', '2012-05-01 08:12:56.124354', '2012-05-01 08:12:56.124354')
+Redirected to http://test.host/lists/index
+Completed 302 Found in 3ms
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "lists"[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$vNManQpqFI5ZvFfOlpqpcOLPGg5hIxzrIVtB.FWhh375P3GUe/QSy', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:12:56.137391', '2012-05-01 08:12:56.137391')[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('home', 'To do list for home', '2012-05-01 08:12:56.139012', '2012-05-01 08:12:56.139012')
+  Processing by ListsController#create as HTML
+  Parameters: {"list"=>{"name"=>"home", "description"=>"To do list for home"}}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('home', 'To do list for home', '2012-05-01 08:12:56.144948', '2012-05-01 08:12:56.144948')
+Redirected to http://test.host/lists/index
+Completed 302 Found in 3ms
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (54.7ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1
+  [1m[36mAREL (1.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$wzAxhl49ouL.ZQ5PYujT1.7t2RBZG/ObOSy2DtLQAhWppQzZvWU/.', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:13:25.593840', '2012-05-01 08:13:25.593840')[0m
+  Processing by ListsController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mList Load (0.4ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+Rendered lists/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 51ms (Views: 48.2ms | ActiveRecord: 57.9ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$77FIgxcm5v9f1UzseRALM.TiXaJBkBimQPUJUxqtEP2A79DdbpTmm', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:13:25.737970', '2012-05-01 08:13:25.737970')[0m
+  Processing by ListsController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 30ms (Views: 27.0ms | ActiveRecord: 1.1ms)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$sLeart1Z.IQV.SViSYHUTeNp5n4b6/MfjSKWJnYJSG86ke6G0xMI.', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:13:25.783860', '2012-05-01 08:13:25.783860')
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('home', 'To do list for home', '2012-05-01 08:13:25.788723', '2012-05-01 08:13:25.788723')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "lists"
+  Processing by ListsController#create as HTML
+  Parameters: {"list"=>{"name"=>"home", "description"=>"To do list for home"}}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('home', 'To do list for home', '2012-05-01 08:13:25.798723', '2012-05-01 08:13:25.798723')
+Redirected to http://test.host/lists/index
+Completed 302 Found in 3ms
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "lists"[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$UWu02QY1RxAiBuTXrX8Jw.KVbzpJcoSBOLfPwBrkUfpyGA78TS1gq', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:13:25.812517', '2012-05-01 08:13:25.812517')[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('home', 'To do list for home', '2012-05-01 08:13:25.814389', '2012-05-01 08:13:25.814389')
+  Processing by ListsController#create as HTML
+  Parameters: {"list"=>{"name"=>"home", "description"=>"To do list for home"}}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('home', 'To do list for home', '2012-05-01 08:13:25.819800', '2012-05-01 08:13:25.819800')
+Redirected to http://test.host/lists/index
+Completed 302 Found in 3ms
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (42.4ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1
+  [1m[36mAREL (1.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$JthU2gOT2Ot6d5ZnEWHPo.atsX/Nrl6XgsvhrM2RCeRE6HZbQ2eHW', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:14:13.138715', '2012-05-01 08:14:13.138715')[0m
+  Processing by ListsController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mList Load (16.0ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+Rendered lists/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 74ms (Views: 55.7ms | ActiveRecord: 60.9ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$i5bLErrKPsjia8BQ..Y/6e6GJTLzUu2VwWxLuapfJ032bMJ30nJZq', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:14:13.316402', '2012-05-01 08:14:13.316402')[0m
+  Processing by ListsController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 42ms (Views: 38.3ms | ActiveRecord: 1.2ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$bSeArXhiJy8a13iSfOzWf.tuQq88DILv5UqAf5eJtLk9xgITkuuM2', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:14:13.378484', '2012-05-01 08:14:13.378484')
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('home', 'To do list for home', '2012-05-01 08:14:13.384538', '2012-05-01 08:14:13.384538')[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "lists"
+  Processing by ListsController#create as HTML
+  Parameters: {"list"=>{"name"=>"home", "description"=>"To do list for home"}}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('home', 'To do list for home', '2012-05-01 08:14:13.394295', '2012-05-01 08:14:13.394295')
+Redirected to http://test.host/lists/index
+Completed 302 Found in 3ms
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "lists"[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$qalYSNw9s5Pez.lO/RQOOOanePTb2/LJU0yrb4J14oPMyIVsB5ZL2', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:14:13.407274', '2012-05-01 08:14:13.407274')[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('home', 'To do list for home', '2012-05-01 08:14:13.409073', '2012-05-01 08:14:13.409073')
+  Processing by ListsController#create as HTML
+  Parameters: {"list"=>{"name"=>"home", "description"=>"To do list for home"}}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('home', 'To do list for home', '2012-05-01 08:14:13.414464', '2012-05-01 08:14:13.414464')
+Redirected to http://test.host/lists/index
+Completed 302 Found in 3ms
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT 1 FROM "users" WHERE ("users"."email" = 'test@email.com') LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "password_salt", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES ('test@email.com', '$2a$04$ngUF6mYM7FevvfkDh9u20uSQCl5fe.eptfnQ3KkcmRX86OsfDgKPO', '', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2012-05-01 08:14:29.437359', '2012-05-01 08:14:29.437359')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('home', 'To do list for home', '2012-05-01 08:14:29.452833', '2012-05-01 08:14:29.452833')
+  Processing by ListsController#create as HTML
+  Parameters: {"list"=>{"name"=>"home", "description"=>"To do list for home"}}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at") VALUES ('home', 'To do list for home', '2012-05-01 08:14:29.487220', '2012-05-01 08:14:29.487220')
+Redirected to http://test.host/lists/index
+Completed 302 Found in 4ms
+  [1m[36mSQL (12.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  Processing by GalleriesController#new as HTML
+Completed 500 Internal Server Error in 1ms
+  Processing by GalleriesController#create as HTML
+  Parameters: {"gallery"=>{}}
+Completed 500 Internal Server Error in 1ms
+  Processing by GalleriesController#create as HTML
+  Parameters: {"gallery"=>{}}
+Completed 500 Internal Server Error in 0ms
+  Processing by GalleriesController#create as HTML
+  Parameters: {"gallery"=>{}}
+Completed 500 Internal Server Error in 0ms
+  Processing by GalleriesController#create as HTML
+  Parameters: {"gallery"=>{}}
+Completed 500 Internal Server Error in 1ms
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (8.0ms)[0m  INSERT INTO "galleries" ("name", "created_at", "updated_at") VALUES (NULL, '2012-05-01 08:19:27.448851', '2012-05-01 08:19:27.448851')
+  Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.3ms)[0m  [1mSELECT "galleries".* FROM "galleries"[0m
+Rendered galleries/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 95ms (Views: 94.0ms | ActiveRecord: 8.8ms)
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "galleries" ("name", "created_at", "updated_at") VALUES (NULL, '2012-05-01 08:19:27.831278', '2012-05-01 08:19:27.831278')
+  Processing by GalleriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGallery Load (0.2ms)[0m  [1mSELECT "galleries".* FROM "galleries" WHERE "galleries"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.5ms)
+  Processing by GalleriesController#new as HTML
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "galleries" ("name", "created_at", "updated_at") VALUES (NULL, '2012-05-01 08:19:27.898447', '2012-05-01 08:19:27.898447')
+  Processing by GalleriesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGallery Load (0.4ms)[0m  [1mSELECT "galleries".* FROM "galleries" WHERE "galleries"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.8ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "galleries"
+  Processing by GalleriesController#create as HTML
+  Parameters: {"gallery"=>{}}
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "galleries" ("name", "created_at", "updated_at") VALUES (NULL, '2012-05-01 08:19:27.922830', '2012-05-01 08:19:27.922830')[0m
+Redirected to http://test.host/galleries/1
+Completed 302 Found in 3ms
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "galleries"
+  Processing by GalleriesController#create as HTML
+  Parameters: {"gallery"=>{}}
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "galleries" ("name", "created_at", "updated_at") VALUES (NULL, '2012-05-01 08:19:27.969467', '2012-05-01 08:19:27.969467')[0m
+Redirected to http://test.host/galleries/1
+Completed 302 Found in 2ms
+  Processing by GalleriesController#create as HTML
+  Parameters: {"gallery"=>{}}
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "galleries" ("name", "created_at", "updated_at") VALUES (NULL, '2012-05-01 08:19:27.981185', '2012-05-01 08:19:27.981185')
+Redirected to http://test.host/galleries/1
+Completed 302 Found in 2ms
+  [1m[36mGallery Load (0.2ms)[0m  [1mSELECT "galleries".* FROM "galleries" ORDER BY galleries.id DESC LIMIT 1[0m
+  Processing by GalleriesController#create as HTML
+  Parameters: {"gallery"=>{}}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 1.4ms)
+  Processing by GalleriesController#create as HTML
+  Parameters: {"gallery"=>{}}
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "galleries" ("name", "created_at", "updated_at") VALUES (NULL, '2012-05-01 08:19:28.014200', '2012-05-01 08:19:28.014200')
+  Processing by GalleriesController#update as HTML
+  Parameters: {"gallery"=>{"these"=>"params"}, "id"=>1}
+  [1m[36mGallery Load (0.2ms)[0m  [1mSELECT "galleries".* FROM "galleries" WHERE "galleries"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "galleries" ("name", "created_at", "updated_at") VALUES (NULL, '2012-05-01 08:19:28.032109', '2012-05-01 08:19:28.032109')
+  Processing by GalleriesController#update as HTML
+  Parameters: {"gallery"=>{}, "id"=>1}
+  [1m[36mGallery Load (0.3ms)[0m  [1mSELECT "galleries".* FROM "galleries" WHERE "galleries"."id" = 1 LIMIT 1[0m
+Redirected to http://test.host/galleries/1
+Completed 302 Found in 3ms
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "galleries" ("name", "created_at", "updated_at") VALUES (NULL, '2012-05-01 08:19:28.061349', '2012-05-01 08:19:28.061349')
+  Processing by GalleriesController#update as HTML
+  Parameters: {"gallery"=>{}, "id"=>1}
+  [1m[36mGallery Load (0.2ms)[0m  [1mSELECT "galleries".* FROM "galleries" WHERE "galleries"."id" = 1 LIMIT 1[0m
+Redirected to http://test.host/galleries/1
+Completed 302 Found in 2ms
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "galleries" ("name", "created_at", "updated_at") VALUES (NULL, '2012-05-01 08:19:28.074408', '2012-05-01 08:19:28.074408')
+  Processing by GalleriesController#update as HTML
+  Parameters: {"gallery"=>{}, "id"=>"1"}
+  [1m[36mGallery Load (0.2ms)[0m  [1mSELECT "galleries".* FROM "galleries" WHERE "galleries"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 1.7ms)
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "galleries" ("name", "created_at", "updated_at") VALUES (NULL, '2012-05-01 08:19:28.087087', '2012-05-01 08:19:28.087087')
+  Processing by GalleriesController#update as HTML
+  Parameters: {"gallery"=>{}, "id"=>"1"}
+  [1m[36mGallery Load (0.2ms)[0m  [1mSELECT "galleries".* FROM "galleries" WHERE "galleries"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.5ms)
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "galleries" ("name", "created_at", "updated_at") VALUES (NULL, '2012-05-01 08:19:28.101022', '2012-05-01 08:19:28.101022')
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "galleries"[0m
+  Processing by GalleriesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGallery Load (0.4ms)[0m  SELECT "galleries".* FROM "galleries" WHERE "galleries"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mDELETE FROM "galleries" WHERE "galleries"."id" = 1[0m
+Redirected to http://test.host/galleries
+Completed 302 Found in 2ms
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM "galleries"
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "galleries" ("name", "created_at", "updated_at") VALUES (NULL, '2012-05-01 08:19:28.114858', '2012-05-01 08:19:28.114858')[0m
+  Processing by GalleriesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGallery Load (0.4ms)[0m  SELECT "galleries".* FROM "galleries" WHERE "galleries"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mDELETE FROM "galleries" WHERE "galleries"."id" = 1[0m
+Redirected to http://test.host/galleries
+Completed 302 Found in 2ms
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (2.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Started GET "/galleries" for 127.0.0.1 at 2012-05-02 15:52:55 -0700
+  Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (11.2ms)[0m  SELECT "galleries".* FROM "galleries"
+Rendered galleries/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 96ms (Views: 83.0ms | ActiveRecord: 12.1ms)
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Started GET "/galleries" for 127.0.0.1 at 2012-05-02 15:54:11 -0700
+  Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (17.9ms)[0m  SELECT "galleries".* FROM "galleries"
+Rendered galleries/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 119ms (Views: 100.1ms | ActiveRecord: 18.5ms)
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Started GET "/galleries" for 127.0.0.1 at 2012-05-02 16:07:21 -0700
+  Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (7.6ms)[0m  SELECT "galleries".* FROM "galleries"
+Rendered galleries/index.html.erb within layouts/application (35.4ms)
+Completed 200 OK in 123ms (Views: 113.5ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/galleries" for 127.0.0.1 at 2012-05-02 16:07:21 -0700
+  Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.1ms)[0m  [1mSELECT "galleries".* FROM "galleries"[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Started GET "/galleries" for 127.0.0.1 at 2012-05-02 16:12:03 -0700
+  Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (25.7ms)[0m  SELECT "galleries".* FROM "galleries"
+Rendered galleries/index.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 199ms (Views: 131.4ms | ActiveRecord: 26.5ms)
+
+
+Started GET "/galleries" for 127.0.0.1 at 2012-05-02 16:12:03 -0700
+  Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.1ms)[0m  [1mSELECT "galleries".* FROM "galleries"[0m
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.1ms)
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Started GET "/galleries" for 127.0.0.1 at 2012-05-02 16:13:38 -0700
+  Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (18.2ms)[0m  SELECT "galleries".* FROM "galleries"
+Rendered galleries/index.html.erb within layouts/application (54.7ms)
+Completed 200 OK in 102ms (Views: 82.7ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/galleries" for 127.0.0.1 at 2012-05-02 16:13:39 -0700
+  Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.1ms)[0m  [1mSELECT "galleries".* FROM "galleries"[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/galleries/1" for 127.0.0.1 at 2012-05-02 16:13:39 -0700
+  Processing by GalleriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGallery Load (0.1ms)[0m  SELECT "galleries".* FROM "galleries" WHERE "galleries"."id" = 1 LIMIT 1
+Completed 404 Not Found in 3ms
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Started GET "/galleries" for 127.0.0.1 at 2012-05-02 16:17:37 -0700
+  Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (112.4ms)[0m  SELECT "galleries".* FROM "galleries"
+Rendered galleries/index.html.erb within layouts/application (34.1ms)
+Completed 200 OK in 436ms (Views: 321.1ms | ActiveRecord: 113.0ms)
+
+
+Started GET "/galleries" for 127.0.0.1 at 2012-05-02 16:17:38 -0700
+  Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.2ms)[0m  [1mSELECT "galleries".* FROM "galleries"[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Started GET "/galleries" for 127.0.0.1 at 2012-05-02 16:18:59 -0700
+  Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (30.9ms)[0m  SELECT "galleries".* FROM "galleries"
+Rendered galleries/index.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 127ms (Views: 95.0ms | ActiveRecord: 31.4ms)
+
+
+Started GET "/galleries" for 127.0.0.1 at 2012-05-02 16:18:59 -0700
+  Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.1ms)[0m  [1mSELECT "galleries".* FROM "galleries"[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms)
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Started GET "/galleries" for 127.0.0.1 at 2012-05-02 16:27:28 -0700
+  Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (15.4ms)[0m  SELECT "galleries".* FROM "galleries"
+Rendered galleries/index.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 353ms (Views: 336.2ms | ActiveRecord: 16.2ms)
+  [1m[36mGallery Load (0.1ms)[0m  [1mSELECT "galleries".* FROM "galleries" WHERE "galleries"."id" = 1 LIMIT 1[0m
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateLists (20110915062305)
+Migrating to CreateTasks (20110916083248)
+Migrating to DeviseCreateUsers (20110918031826)
+Migrating to AddDateToTasks (20110919090128)
+Migrating to CreateGalleries (20120423160702)
+Migrating to CreatePhotos (20120429082009)
+Migrating to AddImageToPhotos (20120429084254)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("galleries")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("lists")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("photos")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("tasks")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_reset_password_token')[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_info('index_users_on_email')
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Started GET "/galleries" for 127.0.0.1 at 2012-05-02 16:30:51 -0700
+  Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (0.2ms)[0m  SELECT "galleries".* FROM "galleries"
+Rendered galleries/index.html.erb within layouts/application (37.5ms)
+Completed 200 OK in 110ms (Views: 108.9ms | ActiveRecord: 0.7ms)
+  [1m[36mGallery Load (0.1ms)[0m  [1mSELECT "galleries".* FROM "galleries" WHERE "galleries"."id" = 1 LIMIT 1[0m
